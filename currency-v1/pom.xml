@@ -12,7 +12,7 @@
 		<pluginRepository>
 			<id>central</id>
 			<name>Maven Plugin Repository</name>
-			<url>http://repo1.maven.org/maven2</url>
+			<url>https://repo1.maven.org/maven2</url>
 			<layout>default</layout>
 			<snapshots>
 				<enabled>false</enabled>
@@ -83,28 +83,6 @@
 		</pluginManagement>
 
 		<plugins>
-
-			<!-- run jslint -->
-			<plugin>
-				<groupId>com.cj.jshintmojo</groupId>
-				<artifactId>jshint-maven-plugin</artifactId>
-				<version>1.6.0</version>
-				<executions>
-					<execution>
-						<id>jslint</id>
-						<phase>validate</phase>
-						<goals>
-							<goal>lint</goal>
-						</goals>
-					</execution>
-				</executions>
-				<configuration>
-					<directories>
-						<directory>apiproxy/resources/jsc</directory>
-					</directories>
-					<reporter>jslint</reporter>
-				</configuration>
-			</plugin>
 
 			<!-- copy the full apiproxy folder to target folder -->
 			<plugin>
